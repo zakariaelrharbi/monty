@@ -13,7 +13,7 @@
 #define CHUNK_SIZE 1024
 #define OPCODE_LEN 13
 
-/*Globals*/ 
+/*Globals*/
 extern int n_data;
 extern int code;
 /**

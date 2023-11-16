@@ -55,8 +55,7 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 	{"push", push}, {"pint", pint}, {"pall", pall},
 	{"pop", pop}, {"add", add}, {"swap", swap},
 	{"sub", sub}, {"nop", nop}, {"mul", mul},
-	{"div", _div}, {"mod", _mod}, {"pstr", pstr},
-	{"pchar", pchar}};
+{"div", _div}, {"mod", _mod}, {"pstr", pstr}, {"pchar", pchar}};
 	if (token != NULL)
 	{
 		copy = malloc(sizeof(char) * (strlen(token) + 1));
@@ -71,6 +70,8 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 				tok2 = strtok(NULL, " ");
 				if (tok2)
 					set_push_value(tok2, line_number);
+				else
+					print_push_err(line_number);
 				for (i = 0; i < OPCODE_LEN; i++)
 				{
 					if (strcmp(tok1, (op[i]).opcode) == 0)
