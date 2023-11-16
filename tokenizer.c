@@ -68,9 +68,9 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 			if (check_coms(tok1) == 0)
 			{
 				tok2 = strtok(NULL, " ");
-				if (tok2)
+				if (tok2 && strcmp(tok1, "push") == 0)
 					set_push_value(tok2, line_number);
-				else
+				else if (tok2 == NULL && strcmp(tok1, "push") == 0)
 					print_push_err(line_number);
 				for (i = 0; i < OPCODE_LEN; i++)
 				{
