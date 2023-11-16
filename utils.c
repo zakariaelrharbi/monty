@@ -9,6 +9,8 @@ int isNumber(char *number)
 {
 	int i = 0;
 
+	if (number[i] == '-')
+		i++;
 	while (number[i])
 	{
 		if (number[i] < '0' || number[i] > '9')
