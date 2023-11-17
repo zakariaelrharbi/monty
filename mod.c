@@ -4,6 +4,7 @@
  * @stack: pointer to pointer to the stack  head
  * @line_number: the line number
  *
+ *
  */
 void _mod(stack_t **stack, unsigned int line_number)
 {
