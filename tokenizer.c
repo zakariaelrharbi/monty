@@ -30,10 +30,8 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 			{
 				tok2 = strtok(NULL, " ");
 				tok2_checker(line_number, tok2, tok1);
-				if (!(strcmp(tok1, "push") == 0 && atoi(tok2) < 0))
+				for (i = 0; i < OPCODE_LEN; i++)
 				{
-					for (i = 0; i < OPCODE_LEN; i++)
-					{
 					if (strcmp(tok1, (op[i]).opcode) == 0)
 					{
 						((op[i]).f)(head, line_number);
