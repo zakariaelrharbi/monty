@@ -71,4 +71,15 @@ void _mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 
+
+/*Tokenizer helper :  */
+void print_malloc_err(void);
+void print_push_err(unsigned int line_number);
+void print_opcode_err(unsigned int line_number, char *tok1);
+void set_push_value(char *tok, unsigned int line_number);
+void tok2_checker(unsigned int line_number, char *tok2, char *tok1);
+
+ 
+  
+   
 #endif
