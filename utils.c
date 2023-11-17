@@ -4,6 +4,7 @@
  * isNumber - checks if string contains a char or now
  * @number: pointer to string to check
  * Return: int
+ *
  */
 int isNumber(char *number)
 {
