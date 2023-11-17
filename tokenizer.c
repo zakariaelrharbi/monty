@@ -38,10 +38,10 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 						flag = 1;
 						break;
 					}
-					}
+				}
 					if (flag == 0 && tok1 != NULL)
 						print_opcode_err(line_number, tok1);
-				}
+				
 			}
 			free(copy);
 		}
