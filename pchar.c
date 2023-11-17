@@ -8,7 +8,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 {
 	int a;
 
-	if (*stack == NULL)
+	if (*stack == NULL || stack == NULL)
 	{
 		dprintf(2, "L%d: can't pchar, stack empty\n", line_number);
 		code = -1;
