@@ -27,7 +27,7 @@ void tokenizer(char *token, unsigned int line_number, stack_t **head)
 		{
 			strcpy(copy, token);
 			tok1 = strtok(copy, " ");
-                        /*printf("tok1 = %s\n", tok1);*/
+			/*printf("tok1 = %s\n", tok1);*/
 			if (check_coms(tok1) == 0)
 			{
 				tok2 = strtok(NULL, " ");
