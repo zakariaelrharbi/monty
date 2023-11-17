@@ -21,7 +21,7 @@ void pstr(stack_t **stack, unsigned int line_number)
 			printf("%c\n", a);
 			temp = temp->next;
 			if (temp)
-			a = temp->n;
+				a = temp->n;
 		}
 		printf("\n");
 	}
