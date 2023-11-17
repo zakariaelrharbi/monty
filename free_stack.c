@@ -3,6 +3,7 @@
  * free_stack - frees the stack
  * @h: pointer to pointer to the ehad of stack
  *
+ *
  */
 void free_stack(stack_t **h)
 {
