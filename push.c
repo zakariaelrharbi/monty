@@ -1,9 +1,10 @@
-#include "monty.h"
+include "monty.h"
 
 /**
  * push - push the element onto the stack
  * @stack: pointer to pointer to the head of stack
  * @line_number: line number in the .m file
+ *
  *
  */
 void push(stack_t **stack, unsigned int line_number)
