@@ -4,6 +4,7 @@
  * @stack: pointer to pointer to the head of stack
  * @line_number: line number in the .m file
  *
+ *
  */
 void _div(stack_t **stack, unsigned int line_number)
 {
