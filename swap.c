@@ -3,7 +3,7 @@
  * swap - perform swap operation on stack
  * @stack: pointer to pointer to the stack  head
  * @line_number: the line number
- *i
+ *
  */
 void swap(stack_t **stack, unsigned int line_number)
 {
