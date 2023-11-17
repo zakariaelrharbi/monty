@@ -2,7 +2,7 @@
 /**
  * mul - perform mul operation
  * @stack: pointer to pointer to the head of stack
- * @line_number: line number in the .m file
+ * @line_number: line of the number in the .m file
  *
  */
 void mul(stack_t **stack, unsigned int line_number)
