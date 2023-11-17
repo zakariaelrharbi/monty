@@ -46,7 +46,8 @@ char *_strdup(const char *src)
 int check_coms(char *tok)
 {
 	int i = 0;
-
+	if (tok == NULL || tok[0] == '\0')
+		return (-1);
 	if (tok[i] == '#')
 		return (-1);
 	else
