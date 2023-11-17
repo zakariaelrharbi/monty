@@ -17,7 +17,7 @@ void pstr(stack_t **stack, unsigned int line_number)
 	{
 		temp = *stack;
 		a = temp->n;
-		while (((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) && temp && a > 0)
+		while (a < 128 && temp && a > 0)
 		{
 			c = (char)a;
 			write(1, &c, 1);
