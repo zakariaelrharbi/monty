@@ -20,7 +20,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 			printf("%c\n", a);
 		else
 		{
-			dprintf(2, "L%d: can't pchar, value out of range", line_number);
+			dprintf(2, "L%d: can't pchar, value out of range\n", line_number);
 			code = -1;
 		}
 	}
