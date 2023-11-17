@@ -5,6 +5,7 @@
  * @stack : pointer to pointer to the stack:x
  * @line_number: the line number
  *
+ *
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
