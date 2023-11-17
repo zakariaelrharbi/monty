@@ -6,7 +6,6 @@
 */
 void pstr(stack_t **stack, unsigned int line_number)
 {
-	int a;
 	stack_t *temp = NULL;
 
 	(void)line_number;
@@ -15,9 +14,9 @@ void pstr(stack_t **stack, unsigned int line_number)
 	else
 	{
 		temp = *stack;
-		while (temp->a < 128 && temp && temp->a > 0)
+		while (temp->n < 128 && temp && temp->n > 0)
 		{
-			printf("%c", a);
+			printf("%c", temp->n);
 			temp = temp->next;
 		}
 		printf("\n");
